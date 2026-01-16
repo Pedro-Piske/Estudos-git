@@ -1,0 +1,6 @@
+frase = str(input('Digite qualquer coisa: ')).strip().lower()
+print(len(frase))
+quan = frase.count('a')
+print(quan)
+print(f'A Aparece pela primeira vez na posiçao {frase.find('a')+1}')
+print(f'A Aparece pela ultima vez na posição {frase.rfind('a')+1}')

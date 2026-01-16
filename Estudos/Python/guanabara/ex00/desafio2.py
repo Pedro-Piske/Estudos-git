@@ -1,0 +1,6 @@
+Dia = input()
+mês = input()
+ano = input()
+print("\033[1;35;41m você nasceu no dia\033[m", Dia)
+print("\033[7;30;42m do mês\033[m", mês)
+print("\033[4;32;47m do ano\033[m", ano)

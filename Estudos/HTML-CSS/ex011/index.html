@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagens flexiveis</h1>
+    <p>Usaremos hj, as tags picture, img e source media, para diminuir e aumentar a imagem de acordo com o tamanho da tela disponível </p>
+    
+     <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Audios</h1>
+    <p>Usando a tag source src e a audio, podemos adicionar audio no nosso site</p>
+    <audio preload="metadata" controls loop> <!-- parametros preload, para adicionar informações do audio antes de incia-lo, controls para mostrar os botoes e loop para reiniciar o audio-->
+        <source src="audio/When You're Not Looking - Nathan Moore.mp3" type="audio/mpeg"><!--no caso de arquivos mp3, colocamos ele como mpeg-->
+        <source src="audio/When You're Not Looking - Nathan Moore.ogg" type="audio/ogg">
+        <source src="audio/When You're Not Looking - Nathan Moore.wav" type="audio/wave"><!--esses dois ultimos formatos, não usaremos hj, pois necessitam de um convertor de audio, o que não é necessário hoje-->
+        <p>Seu navegador, não é capaz de reproduzir esse audio,<a href="audio/When You're Not Looking - Nathan Moore.mp3"> clique aqui para baixar</a> <!-- essa tag a é para quando o audio não for aceito pelo navegador do usúario</p>
+    </audio>
+
+</body>
+</html>

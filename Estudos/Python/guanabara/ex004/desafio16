@@ -1,0 +1,7 @@
+import math
+num = float(input('digite um numero '))
+inte = math.trunc(num)
+print(f"o valor interio é {inte}")
+
+num2 = float(input('digite outro numero '))
+print(f'o valor inteiro é {int(num2)}')

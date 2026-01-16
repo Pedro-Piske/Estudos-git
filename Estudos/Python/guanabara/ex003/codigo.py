@@ -1,0 +1,5 @@
+nome = input("escreva seu nome:" )
+print(f"\033[0;31;40m salve {nome:^20}!\033[m")
+print(f"\033[1;32;45m salve {nome:=^20}!\033[m")
+print(f"\033[7;36;45m salve {nome:>20}!\033[m")
+print(f"\033[4;33;41m salve {nome:<20}!\033[m")
